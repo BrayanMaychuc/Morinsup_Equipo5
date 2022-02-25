@@ -1,4 +1,13 @@
 package com.maychuc.morinsup_equipo5;
 
-public class PaginaPrincipal {
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class PaginaPrincipal extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_principal);
+    }
 }

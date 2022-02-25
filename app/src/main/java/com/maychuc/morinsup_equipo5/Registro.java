@@ -18,15 +18,18 @@ public class Registro extends AppCompatActivity {
     private int PERMISO_REQUERIDO=11;
     private static Credenciales archivo;
 
+    public Registro() {
+    }
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_registro);
         //Estas variables van a poder leer los datos que les insertemos
         //en el caso del boton, permitira la funcion click
-        txtusuario.findViewById(R.id.txtUs);
-        txtPass.findViewById(R.id.txtPass);
-        txtpass2.findViewById(R.id.txtpass2);
-        btnregitrar.findViewById(R.id.btnguardar);
+        txtusuario=findViewById(R.id.txtUs);
+        txtPass=findViewById(R.id.txtPass);
+        txtpass2=findViewById(R.id.txtpass2);
+        btnregitrar=findViewById(R.id.btnguardar);
 
         archivo = new Credenciales(getApplicationContext().getExternalFilesDir(null).getPath());
 

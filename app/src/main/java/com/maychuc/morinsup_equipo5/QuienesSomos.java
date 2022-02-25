@@ -1,4 +1,13 @@
 package com.maychuc.morinsup_equipo5;
 
-public class QuienesSomos {
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class QuienesSomos extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_qs);
+    }
 }
