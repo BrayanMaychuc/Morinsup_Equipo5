@@ -15,6 +15,7 @@ public class Credenciales {
     private static final String nombre = "credenciales.txt";
     private static String ruta = "";
     private static File archivo;
+    
 
     public Credenciales(String ruta) {
 
