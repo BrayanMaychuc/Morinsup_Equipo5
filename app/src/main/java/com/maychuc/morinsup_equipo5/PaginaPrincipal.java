@@ -35,5 +35,21 @@ public class PaginaPrincipal extends AppCompatActivity {
             }
         });
 
+        btnCt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), Cuenta.class);
+                startActivity(i);
+            }
+        });
+
+
+        btnhelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), Ayuda.class);
+                startActivity(i);
+            }
+        });
     }
 }
